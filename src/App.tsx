@@ -9,7 +9,7 @@ function App() {
   const bands = [skaBand, kpopBand, punkBand];
   return (
     <div className="App">
-      {bands.map((band: IBand) => <BandForm band={band} />)}
+      {bands.map((band: IBand) => <BandForm key={band.id} band={band} />)}
     </div>
   );
 }
